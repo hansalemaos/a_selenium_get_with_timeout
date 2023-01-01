@@ -20,7 +20,7 @@ if __name__ == "__main__":
     path = download_undetected_chromedriver(folder_path_for_exe=folderchromedriver, undetected=True)
     driver = uc.Chrome(driver_executable_path=path)
     url=r"https://www.whitehouse.gov/"
-    get_site_with_timeout(driver, url, timeout=5, ready_state=True)
+    get_site_with_timeout(driver, url, timeout=5)
 
 ```
 
